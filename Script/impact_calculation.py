@@ -5,15 +5,15 @@ import pandas as pd
 
 # Paths to the vulnerability curve files
 flood_curve_paths = {
-    'RES': '/Users/alessandroborre/Library/CloudStorage/OneDrive-CIMAFoundation/Dottorato/Paper Framework/Python Code/FL/FL_RES_VulnCurve.csv',
-    'COM': '/Users/alessandroborre/Library/CloudStorage/OneDrive-CIMAFoundation/Dottorato/Paper Framework/Python Code/FL/FL_COM_VulnCurve.csv',
-    'IND': '/Users/alessandroborre/Library/CloudStorage/OneDrive-CIMAFoundation/Dottorato/Paper Framework/Python Code/FL/FL_IND_VulnCurve.csv'
+    'RES': './Data/FL/FL_RES_VulnCurve.csv',
+    'COM': './Data/FL/FL_COM_VulnCurve.csv',
+    'IND': './Data/FL/FL_IND_VulnCurve.csv'
 }
 
 earthquake_curve_paths = {
-    'RES': '/Users/alessandroborre/Library/CloudStorage/OneDrive-CIMAFoundation/Dottorato/Paper Framework/Python Code/EQ/EQ_RES_VulnCurve.csv',
-    'COM': '/Users/alessandroborre/Library/CloudStorage/OneDrive-CIMAFoundation/Dottorato/Paper Framework/Python Code/EQ/EQ_COM_VulnCurve.csv',
-    'IND': '/Users/alessandroborre/Library/CloudStorage/OneDrive-CIMAFoundation/Dottorato/Paper Framework/Python Code/EQ/EQ_IND_VulnCurve.csv'
+    'RES': './Data/EQ/EQ_RES_VulnCurve.csv',
+    'COM': './Data/EQ/EQ_COM_VulnCurve.csv',
+    'IND': './Data/EQ/EQ_IND_VulnCurve.csv'
 }
 
 # Function to load flood vulnerability curve
