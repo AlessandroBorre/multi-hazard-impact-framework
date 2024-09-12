@@ -10,14 +10,14 @@ from modify_damages import f1, f2, f3
 
 # Paths to the vulnerability curve files
 flood_curve_paths = {
-    'RES': '/Users/alessandroborre/Library/CloudStorage/OneDrive-CIMAFoundation/Dottorato/Paper Framework/Python Code/FL/FL_RES_VulnCurve.csv',
-    'COM': '/Users/alessandroborre/Library/CloudStorage/OneDrive-CIMAFoundation/Dottorato/Paper Framework/Python Code/FL/FL_COM_VulnCurve.csv',
-    'IND': '/Users/alessandroborre/Library/CloudStorage/OneDrive-CIMAFoundation/Dottorato/Paper Framework/Python Code/FL/FL_IND_VulnCurve.csv'
+    'RES': './Data/FL/FL_RES_VulnCurve.csv',
+    'COM': './Data/FL/FL_COM_VulnCurve.csv',
+    'IND': './Data/FL/FL_IND_VulnCurve.csv'
 }
 earthquake_curve_paths = {
-    'RES': '/Users/alessandroborre/Library/CloudStorage/OneDrive-CIMAFoundation/Dottorato/Paper Framework/Python Code/EQ/EQ_RES_VulnCurve.csv',
-    'COM': '/Users/alessandroborre/Library/CloudStorage/OneDrive-CIMAFoundation/Dottorato/Paper Framework/Python Code/EQ/EQ_COM_VulnCurve.csv',
-    'IND': '/Users/alessandroborre/Library/CloudStorage/OneDrive-CIMAFoundation/Dottorato/Paper Framework/Python Code/EQ/EQ_IND_VulnCurve.csv'
+    'RES': './Data/EQ/EQ_RES_VulnCurve.csv',
+    'COM': './Data/EQ/EQ_COM_VulnCurve.csv',
+    'IND': './Data/EQ/EQ_IND_VulnCurve.csv'
 }
 
 # Load the vulnerability curves
@@ -28,12 +28,12 @@ if use_random == 'yes':
     events_df = generate_random_events(num_events)
 else:
     # Specify the path to the CSV file directly
-    file_path = '/Users/alessandroborre/Library/CloudStorage/OneDrive-CIMAFoundation/Dottorato/Paper Framework/Python Code/events.csv'
+    file_path = './Data/events.csv'
     events_df = load_events_from_csv(file_path)
 print(events_df)
 
 # Load exposure data
-exposure_file_path = '/Users/alessandroborre/Library/CloudStorage/OneDrive-CIMAFoundation/Dottorato/Paper Framework/Python Code/Exposure-Table.csv'
+exposure_file_path = './Data/Exposure-Table.csv'
 exposure_df = load_exposure(exposure_file_path)
 
 # Calculate impacts using the external function
@@ -268,11 +268,11 @@ for building_id in unique_building_ids:
     plt.plot(x[0:int(analysisT[0])], Int[0:int(analysisT[0])], label='Integrity')
     plt.xlabel('Days')
     plt.ylabel('Integrity')
-    plt.title('Integrity over time')
+    plt.title(f'Integrity over time Exposure N {building_id}')
     plt.xlim(-40, int(analysisT[0]))
     plt.legend()
     #plt.show()
-    plt.savefig(f'/Users/alessandroborre/Desktop/Integ_CasoProva_{curv}.png')
+    plt.savefig(f'./Physical_Integrity_{curv}_Exposure_n{building_id}.png')
 
 
 
