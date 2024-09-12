@@ -1,0 +1,10 @@
+Building Type and Floors,Median (S_a),Standard Deviation,Code
+Precast (Low-rise),0.5,0.6,I-P-L
+Precast (Mid-rise),0.7,0.6,I-P-M
+Precast (High-rise),0.9,0.6,I-P-H
+Reinforced Concrete (Low-rise),0.55,0.6,I-RC-L
+Reinforced Concrete (Mid-rise),0.75,0.6,I-RC-M
+Reinforced Concrete (High-rise),0.95,0.6,I-RC-H
+Steel (Low-rise),0.45,0.6,I-S-L
+Steel (Mid-rise),0.65,0.6,I-S-M
+Steel (High-rise),0.85,0.6,I-S-H

@@ -1,0 +1,10 @@
+Building Type and Floors,Median (S_a),Standard Deviation,Code
+Steel (Low-rise),0.4,0.6,C-S-L
+Steel (Mid-rise),0.55,0.6,C-S-M
+Steel (High-rise),0.7,0.6,C-S-H
+Reinforced Concrete (Low-rise),0.45,0.6,C-RC-L
+Reinforced Concrete (Mid-rise),0.6,0.6,C-RC-M
+Reinforced Concrete (High-rise),0.8,0.6,C-RC-H
+Masonry (Low-rise),0.35,0.6,C-M-L
+Masonry (Mid-rise),0.5,0.6,C-M-M
+Masonry (High-rise),0.7,0.6,C-M-H
