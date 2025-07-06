@@ -167,7 +167,7 @@ Optional:
 
 - **Earthquake fragility curves**:  
   FEMA Hazus-MH Technical Manual, 2020
-
+  [Link: https://www.fema.gov/flood-maps/tools-resources/flood-map-products/hazus/user-technical-manuals]
 ---
 
 ## 🙋 Contact
